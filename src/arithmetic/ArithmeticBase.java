@@ -15,12 +15,14 @@ import java.util.Scanner;
  */
 public class ArithmeticBase 
 {
- public double x,y;
+ public enum s {PLUS, MINUS, TIMES, DIVIDE};
+ public enum calculate {DOUBLE};
+ 
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();
+         String s= sc.next();
         switch (s.toUpperCase()) 
         {
             case "PLUS":
